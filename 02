@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int angka, b = 0, digit;
+
+    cout << "Masukkan angka: ";
+    cin >> angka;
+
+  
+    if (angka < 0) {
+        cout << "angka tidak boleh negatif.masukkan angka" << endl;
+        
+    }
+
+    
+    while (angka != 0) {
+        digit = angka % 10;
+        b += digit;
+        angka /= 10;
+    }
+
+    cout << "Hasil penjumlahan" << " : " << b << endl;
+
+   
+}
